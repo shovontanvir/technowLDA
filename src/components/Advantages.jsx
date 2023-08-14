@@ -4,8 +4,8 @@ import AdvantagesData from '../DummyData/AdvantagesData'
 
 const Advantages = () => {
     return (
-    <section className='  px-28 py-10'>        
-    <div className=' flex flex-wrap items-end justify-end'>
+    <section className='lg:px-28 px-5 py-10'>        
+    <div className=' lg:flex  lg:flex-wrap items-end lg:justify-end'>
         
             { AdvantagesData.map ((item, index) => (
                 

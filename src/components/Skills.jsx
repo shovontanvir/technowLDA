@@ -2,11 +2,11 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <section className='px-28 py-10 justify-start'>
-      <div className='w-3/4' >
+    <section className='lg:px-28 px-10 py-10 justify-start'>
+      <div className='lg:w-3/4' >
         <h5 className='text-2xl text-slate-400 font-normal'>SKILS</h5>
         <h1 className='text-6xl font-normal pb-10' >Experience</h1>
-        <p className='text-lg font-medium pr-20 pb-14 '>
+        <p className='text-lg font-medium lg:pr-20 pb-14 '>
         We know technology, where it's been and where it's going. Thus our solutions are developed using scrum method that allows customers move from their current state to a more matured future. 
         </p>
         <div>
