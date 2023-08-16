@@ -4,7 +4,7 @@ import ProductData from '../DummyData/ProductData'
 
 const Product = () => {
   return (
-    <section className='lg:px-28 px-5 py-10'>
+    <section className='lg:px-28 px-5 py-10' id='products'>
       <div className=' text-center  '>
         <h3 className='uppercase text-2xl font-semibold text-slate-400'> Products </h3>
         <h1 className=' text-6xl font-bold pb-10 '> Products </h1>

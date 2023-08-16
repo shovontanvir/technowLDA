@@ -7,12 +7,12 @@ import Map from '../components/Map'
 
 const Contact = () => {
     
-  return (
-    <section className='lg:px-28 px-10 py-20 flex '>
-        <div className='lg:basis-3/5 lg:pr-10 rounded-xl overflow-clip'>
+return (
+    <section className='lg:px-28 px-10 py-20 flex flex-wrap' id='contact'>
+        <div className='basis-full lg:basis-3/5 lg:pr-10 h-screen lg:h-auto rounded-xl overflow-clip'>
             <Map />
         </div>
-        <div className='lg:basis-2/5 '> 
+        <div className='basis-full lg:basis-2/5 '> 
             <h3 className='uppercase text-2xl font-semibold text-slate-400 ' > contacts </h3>
             <h1 className='text-6xl font-bold pb-10 '> Get in touch </h1>
             <p className=' text-base font-normal pb-12 '>We are always looking forward to new challenges, opportunities and interesting projects. So feel free to contact us. <br /><br />

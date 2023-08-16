@@ -27,7 +27,7 @@ function App() {
       < HomeSlider/>
       < About />
       < Commitments />
-      < Partners />
+      < Partners /> 
       < Advantages />
       < Gradient />
       < Service />

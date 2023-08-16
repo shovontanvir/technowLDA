@@ -1,52 +1,86 @@
 import React, { useState } from 'react'
 import technowlogo from '../assets/Images/technowlogo.png'
-import menu from '../assets/Images/menu.png'
-import close from '../assets/Images/close.png'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState( true );
-    let links =[
-        {name: "About", link:"/" },
-        {name: "Partners", link:"/" },
-        {name: "Advantages", link:"/" },
-        {name: "Services", link:"/" },
-        {name: "Skills", link:"/" },
-        {name: "Experience", link:"/" },
-        {name: "products", link:"/" },
-        {name: "Contact", link:"/" }
-    ]
-    // const handleMenuOpen = ( prevState ) =>{
-        // setIsOpen ( !prevState )
-    // }
-    
+    const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <nav className="w-screen lg:flex justify-between items-center fixed bg-black bg-opacity-90 border-b-2 border-white z-50 px-20 py-4">
-            <div className="basis-1/4 lg:w-32 w-24 py-2 lg:pl-4 ">
-                <img src={technowlogo}/>
+    <nav className="fixed z-50">
+        <div className="w-screen z-50 px-10 md:px-12 lg:px-20 py-5 relative bg-black bg-opacity-90 border-b-2 border-white flex justify-between items-center">
+        <div
+            className={`absolute md:hidden top-full left-0 py-1 px-5 w-screen ${
+            !menuOpen ? "opacity-0" : "opacity-100"
+            } transition-all duration-500`}>
+            <div className="flex bg-black bg-opacity-90 border-2 rounded-tl-3xl rounded-br-3xl border-white py-5 justify-around">
+            <ul className='flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 md:ml-auto' >
+                <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white ' onClick={()=> setMenuOpen(false)}>
+                    <a href="#about">About</a>
+                </li>
+                <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white ' onClick={()=> setMenuOpen(false)}>
+                    <a href="#partners">Partners</a>
+                </li>
+                <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white ' onClick={()=> setMenuOpen(false)}>
+                    <a href="#advantages">Advantages</a>
+                </li>
+                <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white ' onClick={()=> setMenuOpen(false)}>
+                    <a href="#services">Services</a>
+                </li>
+                <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white ' onClick={()=> setMenuOpen(false)}>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white ' onClick={()=> setMenuOpen(false)}>
+                    <a href="#products">Products</a>
+                </li >
+                <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white ' onClick={()=> setMenuOpen(false)}>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
             </div>
-            <div className='absolute items-center right-20 top-10 cursor-pointer md:hidden'>
-                
-                <img src={ !isOpen ? menu : close } width={30}   onClick ={ () => setIsOpen(prevState => !prevState)  } />
-                
             </div>
-
-            {/* <div className="basis-3/4 flex justify-between items-center text-white text-sm pr-7 transition-all  */}
-                            {/* duration-500 md:static right-0 md:w-full w-[100vw] h-[80vw] md:h-auto p-5 top-[100%] -left-[500%] "> */}
-                {/* <ul className='flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 md:ml-auto'> */}
-                    {/* { */}
-                        {/* links.map ((link) =>( */}
-
-                            {/* <li> */}
-                                {/* <a href={link.link} className='hover:scale-110 duration-300 py-1 hover:text-[#FF7069] font-sos font-bold items-center'>{link.name}</a> */}
-                            {/* </li> */}
-
-                            {/* )) */}
-                    {/* } */}
-                {/* </ul> */}
-            {/* </div> */}
+        <div className="cursor-pointer" onClick={() => navigate("#")}>
+            <img src={technowlogo} alt="logo" width={80} />
+        </div>
+        <div className="items-center flex justify-end relative w-full">
+        <div
+            className="text-white flex md:hidden cursor-pointer"
+            onClick={() => setMenuOpen((prevState) => !prevState)}>
+            <FontAwesomeIcon
+                icon={!menuOpen ? faBars  : faXmark }
+                size="lg"
+                style={{color: "#ff7069",}}
+            />
+            </div>
+            <div className="hidden md:flex">
+            <ul className='flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 md:ml-auto'>
+                <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white '>
+                    <a href="#about">About</a>
+                </li>
+                <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white '>
+                    <a href="#partners">Partners</a>
+                </li>
+                <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white '>
+                    <a href="#advantages">Advantages</a>
+                </li>
+                <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white '>
+                    <a href="#services">Services</a>
+                </li>
+                <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white '>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white '>
+                    <a href="#products">Products</a>
+                </li >
+                <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white '>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            </div>
+            
+        </div>
+        </div>
         </nav>
-    )
-}
-
-export default Navbar
+    );
+};
+export default Navbar;

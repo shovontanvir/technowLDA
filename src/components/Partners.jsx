@@ -6,7 +6,7 @@ import logitechlogo from '../assets/Images/logitech.png'
 
 const Partners = () => {
   return (
-    <section className='text-center flex justify-center lg:px-28 px-5 py-24  '>
+    <section className='text-center flex justify-center lg:px-28 px-5 py-24  ' id='partners'>
         <div className=' py-16 lg:px-56 px-5  border-2 border-[#e36392] border-t-[#e66337] rounded-3xl '>
                 <h3 className='text-2xl text-slate-400 font-normal '>Partners</h3>
                 <h1 className='font-semibold lg:text-6xl text-4xl pb-10 '>Unlock a brighter future together</h1>

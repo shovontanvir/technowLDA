@@ -10,7 +10,7 @@ import ServiceData from "../DummyData/ServiceData";
 
 const Service = () => {
   return (
-    <section className="">
+    <section className="" id='services'>
       <div className=" lg:px-28 px-10 text-center">
         <h3 className=" pt-20 text-2xl text-slate-400 font-semibold "> SERVICES</h3>
         <h1 className="text-6xl pb-10">What we do</h1>
@@ -20,28 +20,25 @@ const Service = () => {
       <div className="flex lg:px-28 px-5 py-10">
         <Swiper
         breakpoints={{
-          '640px': {
+          '640': {
             slidesPerView: 1,
             spaceBetween: 10,
           },
-          '768px': {
+          '768': {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          '1024px': {
+          '1024': {
             slidesPerView: 3,
             spaceBetween: 40,
           },
-          '1280px': {
-            slidesPerView: 4,
-            spaceBetween: 50,
-          },
+        
         }}
         navigation={true} 
         modules={[Navigation]} 
-        className="mySwiper flex flex-wrap">
+        className="mySwiper ">
         {ServiceData.map((item) => (
-          <SwiperSlide className='basis-1/3 px-5'>
+          <SwiperSlide className=' px-5'>
           <ServiceCard
             key={item.id}
             image={item.image}

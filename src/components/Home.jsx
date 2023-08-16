@@ -16,14 +16,18 @@ const Home = () => {
             </p>
             <div className=' lg:flex py-10 gap-5 '>
                 <div className='pb-5'>
+                  <a href="#services">
                   <button className=''>
                       <img src={ourservicebtn}  />
                   </button>
+                  </a>
                 </div>
                 <div>
+                  <a href="#contact">
                   <button className=''>
                       <img src={contactusbtn} />
                   </button>
+                  </a>
                 </div>
             </div>
         </div>
