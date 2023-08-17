@@ -1,5 +1,3 @@
-import { Navigation, Autoplay,  A11y } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -10,7 +8,7 @@ import React from 'react'
 const About = () => {
     return (
         <section className='' id='about' >
-            <div className='lg:px-28 px-10 py-24'>
+            <div className='lg:px-28 px-5 py-16'>
                     <h5 className='text-2xl font-bold text-slate-400 gap-2'>About</h5>
 
                     <h1 className='lg:text-6xl text-4xl  font-semibold pb-10'>
@@ -29,8 +27,8 @@ const About = () => {
                     </div>
             </div>
                     <div>
-                        <p className="loopslider bg-slate-100 text-base py-2 ">
-                                <span className='text-xl font-semibold'>From Sustainable Solutions to Sustainable Partnerships: Technow has a Vision for a Better World  From Sustainable Solutions to Sustainable Partnerships: Technow has a Vision for a Better World;</span>
+                        <p className="loopslider py-2 ">
+                                <infinity className='text-xl font-semibold'> <span className='bg-slate-100 p-2 border-2'> System Integration</span> <span className='bg-slate-100 p-2 border-2  '>IT Infrastructure Engineering</span>  <span className='bg-slate-100 p-2 border-2'>Application Development</span>  <span className='bg-slate-100 p-2 border-2'>Cloud Services</span> <span className='bg-slate-100 p-2 border-2'>System Integration</span>  <span className='bg-slate-100 p-2 border-2'> System Integration</span> <span className='bg-slate-100 p-2 border-2  '>IT Infrastructure Engineering</span>  <span className='bg-slate-100 p-2 border-2'>Application Development</span>  <span className='bg-slate-100 p-2 border-2'>Cloud Services</span> <span className='bg-slate-100 p-2 border-2'>System Integration</span>  <span className='bg-slate-100 p-2 border-2'> System Integration</span> <span className='bg-slate-100 p-2 border-2  '>IT Infrastructure Engineering</span>  <span className='bg-slate-100 p-2 border-2'>Application Development</span>  <span className='bg-slate-100 p-2 border-2'>Cloud Services</span> <span className='bg-slate-100 p-2 border-2'>System Integration</span>  <span className='bg-slate-100 p-2 border-2'> System Integration</span> <span className='bg-slate-100 p-2 border-2  '>IT Infrastructure Engineering</span>  <span className='bg-slate-100 p-2 border-2'>Application Development</span>  <span className='bg-slate-100 p-2 border-2'>Cloud Services</span> <span className='bg-slate-100 p-2 border-2'>System Integration</span>  <span className='bg-slate-100 p-2 border-2'> System Integration</span> <span className='bg-slate-100 p-2 border-2  '>IT Infrastructure Engineering</span>  <span className='bg-slate-100 p-2 border-2'>Application Development</span>  <span className='bg-slate-100 p-2 border-2'>Cloud Services</span> <span className='bg-slate-100 p-2 border-2'>System Integration</span>  </infinity>
                         </p>
                     
 

@@ -1,4 +1,4 @@
-import { Navigation, Autoplay,  A11y } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -7,17 +7,19 @@ import 'swiper/css/scrollbar';
 import React from 'react'
 import ServiceCard from "../components/ServiceCard";
 import ServiceData from "../DummyData/ServiceData";
+import next from '../assets/Images/next.png'
 
 const Service = () => {
   return (
     <section className="" id='services'>
-      <div className=" lg:px-28 px-10 text-center">
+      <div className=" lg:px-28 px-9 text-center">
         <h3 className=" pt-20 text-2xl text-slate-400 font-semibold "> SERVICES</h3>
         <h1 className="text-6xl pb-10">What we do</h1>
         <p className="text-base font-normal lg:px-64 pb-14">Technow strives to be a reliable and trusted partner, working closely with our clients to ensure their success in today's rapidly evolving technology landscape. Our team of experts is committed to delivering high-quality services and exceptional customer support, helping our clients achieve their goals and stay ahead of the competition. Explore our services below to learn more.</p>
 
       </div>
-      <div className="flex lg:px-28 px-5 py-10">
+      
+      <div className=" lg:px-28 px-5 ">
         <Swiper
         breakpoints={{
           '640': {
@@ -30,11 +32,10 @@ const Service = () => {
           },
           '1024': {
             slidesPerView: 3,
-            spaceBetween: 40,
+            spaceBetween: 20,
           },
         
         }}
-        navigation={true} 
         modules={[Navigation]} 
         className="mySwiper ">
         {ServiceData.map((item) => (
@@ -50,30 +51,25 @@ const Service = () => {
           </SwiperSlide>
         ))}
         </Swiper>
+        
+        
       </div>
+      <div className='items-end'>
+          <a href="">
+            <button>
+              <img src={next} alt="" />
+            </button>
+          </a>
+        </div>
+      
       {/* loop swiper */}
-      <Swiper
-        modules={[Navigation, Autoplay, A11y]}
-        spaceBetween={100}
-        slidesPerView={1}
-        autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-            
-        }}
-        
-        
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
-        
-    >
-    <div>
-    <p className="loopslider bg-slate-100 text-base py-2 ">
-            <span className='text-xl font-semibold'>From Sustainable Solutions to Sustainable Partnerships: Technow has a Vision for a Better World  From Sustainable Solutions to Sustainable Partnerships: Technow has a Vision for a Better World</span>
-        </p>
-
+    
+    <div className='py-16'>
+      <p className="loopslider py-2 ">
+        <infinity className='text-xl font-semibold'> <span className='bg-slate-100 p-2 border-2'>Indepth requirement analysis</span> <span className='bg-slate-100 p-2 border-2  '>Overall system architecture</span>  <span className='bg-slate-100 p-2 border-2'>Efficient Programming</span> <span className='bg-slate-100 p-2 border-2'>Customization</span> <span className='bg-slate-100 p-2 border-2'>Automated quality testing</span> <span className='bg-slate-100 p-2 border-2'>Indepth requirement analysis</span> <span className='bg-slate-100 p-2 border-2  '>Overall system architecture</span>  <span className='bg-slate-100 p-2 border-2'>Efficient Programming</span> <span className='bg-slate-100 p-2 border-2'>Customization</span> <span className='bg-slate-100 p-2 border-2'>Automated quality testing</span> <span className='bg-slate-100 p-2 border-2'>Indepth requirement analysis</span> <span className='bg-slate-100 p-2 border-2  '>Overall system architecture</span>  <span className='bg-slate-100 p-2 border-2'>Efficient Programming</span> <span className='bg-slate-100 p-2 border-2'>Customization</span> <span className='bg-slate-100 p-2 border-2'>Automated quality testing</span> <span className='bg-slate-100 p-2 border-2'>Indepth requirement analysis</span> <span className='bg-slate-100 p-2 border-2  '>Overall system architecture</span>  <span className='bg-slate-100 p-2 border-2'>Efficient Programming</span> <span className='bg-slate-100 p-2 border-2'>Customization</span> <span className='bg-slate-100 p-2 border-2'>Automated quality testing</span> <span className='bg-slate-100 p-2 border-2'>Indepth requirement analysis</span> <span className='bg-slate-100 p-2 border-2  '>Overall system architecture</span>  <span className='bg-slate-100 p-2 border-2'>Efficient Programming</span> <span className='bg-slate-100 p-2 border-2'>Customization</span> <span className='bg-slate-100 p-2 border-2'>Automated quality testing</span> </infinity>
+      </p>
     </div>
-    </Swiper>
+  
     </section>
   );
 };

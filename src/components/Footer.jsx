@@ -1,5 +1,6 @@
 import React from 'react'
 import footerlogo from '../assets/Images/technowlogo.png'
+import topArrow from '../assets/Images/up.png'
 
 
 const Footer = () => {
@@ -32,9 +33,16 @@ return (
                     <p className='text-sm font-normal lg:pr-28   '>
                     Developed By B-Trac Solution Team
                     </p>
+                    <div className='flex'>
                     <p className='text-sm font-normal py-1 lg:py-0'>
                     To the top
                     </p>
+                    <a href="#">
+                        <button>
+                            <img src={topArrow} alt="up arrow" width={25} />
+                        </button>
+                    </a>
+                    </div>
         </div>
 
 

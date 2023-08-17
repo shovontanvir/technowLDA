@@ -4,8 +4,8 @@ import CommitmentsData from '../DummyData/CommitmentsData';
 
 const Commitments = () => {
   return (
-    <section className='lg:px-28 px-10 py-24'>
-        <div className='lg:flex gap-5'>
+    <section className='lg:px-28 px-5 py-16'>
+        <div className='lg:flex'>
             {CommitmentsData.map((item) => (
                 < CommitmentsCard
                     key={item.heading}
