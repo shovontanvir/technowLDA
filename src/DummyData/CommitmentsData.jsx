@@ -1,6 +1,6 @@
-import goal from "../assets/Images/goal-logo.png";
-import commitment from "../assets/Images/commitment-logo.png";
-import Priority from "../assets/Images/Priority-logo.png";
+import goal from "../assets/Images/goalLogo.png";
+import commitment from "../assets/Images/commitmentLogo.png";
+import Priority from "../assets/Images/PriorityLogo.png";
 
 export const CommitmentsData =[
     {

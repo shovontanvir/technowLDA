@@ -1,7 +1,7 @@
 
 import React from 'react'
-import ourservicebtn from '../assets/Images/our-service-btn.png'
-import contactusbtn from '../assets/Images/contact-us-btn.png'
+import ourservicebtn from '../assets/Images/ourServiceBtn.png'
+import contactusbtn from '../assets/Images/contactUsBtn.png'
 
 
 const Home = () => {

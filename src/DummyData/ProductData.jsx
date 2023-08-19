@@ -1,5 +1,5 @@
-import serverbg from '../assets/Images/product-server-logo-bg.png'
-import corebg from '../assets/Images/product-coreclient-logo-bg.png'
+import serverbg from '../assets/Images/serverLogo.png'
+import corebg from '../assets/Images/coreclientLogo.png'
 
 
 export const ProductData =[

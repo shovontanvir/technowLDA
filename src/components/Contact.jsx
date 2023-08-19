@@ -1,5 +1,5 @@
 import React from 'react'
-import sentbtn from '../assets/Images/sent-btn.png'
+import sentbtn from '../assets/Images/sentBtn.png'
 import Map from '../components/Map'
 
 

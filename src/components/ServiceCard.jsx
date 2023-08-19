@@ -7,8 +7,8 @@ const ServiceCard = ({ image, heading, altDesc, subHeading, description }) => {
       <img src={image} alt={altDesc} className="w-full rounded-tl-3xl  " />
       <div className=" p-5 ">
         <h1 className="  text-2xl font-semibold pb-2 ">{heading}</h1>
-        <h3 className=" text-base font-normal pb-2 text-[#e66337]">{subHeading}</h3>
-        <p className=" text-base font-normal tracking-wide ">{description}</p>
+        <h3 className=" text-base font-normal pb-2 text-[#e66337] tracking-wide line-clamp-2">{subHeading}</h3>
+        <p className=" text-base font-normal ">{description}</p>
       </div>
     </div>
     </div>

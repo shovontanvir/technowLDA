@@ -44,7 +44,7 @@ export const ServiceData = [
     subHeading:
       "Accelerate Your Growth with Strategic Consulting and Innovative Problem Solving",
     description:
-      "Our services focus on understanding our clients' business challenges and providing tailored solutions that align with their goals. Our team helps businesses identify and overcome complex IT challenges, driving innovation and growth. We specialize in problem-solving to find practical solutions to IT challenges.",
+      "Our services focus on understanding our clients' business challenges and providing tailored solutions align with their goals. Our team helps businesses identify and overcome complex IT challenges, driving innovation and growth. We specialize in problem-solving to find practical solutions to IT challenges.",
   },
 ];
 
