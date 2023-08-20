@@ -20,27 +20,33 @@ const Partners = () => {
               <div className='flex'>
                 <Swiper
         
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
-        pagination={true}
-        className="mySwiper flex"
-        
-      >
-        <SwiperSlide className='flex items-center justify-center gap-10'>
-        <img src={hplogo} alt="hp" className='' />
-        </SwiperSlide>
-        <SwiperSlide className='flex items-center justify-center gap-10'>
-        <img src={microsoftlogo} alt="microsoft" className='' />
-        </SwiperSlide>
-        <SwiperSlide className='flex items-center justify-center gap-10'>
-        <img src={delllogo} alt="dell" className='pt-5' />
-        </SwiperSlide>
-        <SwiperSlide className='flex items-center justify-center gap-10'>
-        <img src={logitechlogo} alt="logitech" /> 
-        </SwiperSlide>
-      </Swiper>
-      </div>
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={'auto'}
+                    pagination={true}
+                    autoplay={{
+                      delay: 2500,
+                      disableOnInteraction: false,
+                    }}
+                    modules={[Autoplay]}
+                    className="mySwiper flex"
+                    
+                    
+                  >
+                    <SwiperSlide className='flex items-center justify-center gap-10'>
+                    <img src={hplogo} alt="hp" />
+                    </SwiperSlide>
+                    <SwiperSlide className='flex items-center justify-center gap-10'>
+                    <img src={microsoftlogo} alt="microsoft" />
+                    </SwiperSlide>
+                    <SwiperSlide className='flex items-center justify-center gap-10'>
+                    <img src={delllogo} alt="dell" />
+                    </SwiperSlide>
+                    <SwiperSlide className='flex items-center justify-center gap-10'>
+                    <img src={logitechlogo} alt="logitech" /> 
+                    </SwiperSlide>
+                </Swiper>
+              </div>
 
         </div>
     </section>

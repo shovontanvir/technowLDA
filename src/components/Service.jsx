@@ -36,7 +36,11 @@ const Service = () => {
           },
         
         }}
-        modules={[Navigation]} 
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Navigation, Autoplay]} 
         className="mySwiper ">
         {ServiceData.map((item) => (
           <SwiperSlide className=' px-5'>
@@ -65,8 +69,8 @@ const Service = () => {
       {/* loop swiper */}
     
     <div className='py-16'>
-      <p className="loopslider py-2 ">
-        <infinity className='text-xl font-semibold'> <span className='bg-slate-100 p-2 border-2'>Indepth requirement analysis</span> <span className='bg-slate-100 p-2 border-2  '>Overall system architecture</span>  <span className='bg-slate-100 p-2 border-2'>Efficient Programming</span> <span className='bg-slate-100 p-2 border-2'>Customization</span> <span className='bg-slate-100 p-2 border-2'>Automated quality testing</span> <span className='bg-slate-100 p-2 border-2'>Indepth requirement analysis</span> <span className='bg-slate-100 p-2 border-2  '>Overall system architecture</span>  <span className='bg-slate-100 p-2 border-2'>Efficient Programming</span> <span className='bg-slate-100 p-2 border-2'>Customization</span> <span className='bg-slate-100 p-2 border-2'>Automated quality testing</span> <span className='bg-slate-100 p-2 border-2'>Indepth requirement analysis</span> <span className='bg-slate-100 p-2 border-2  '>Overall system architecture</span>  <span className='bg-slate-100 p-2 border-2'>Efficient Programming</span> <span className='bg-slate-100 p-2 border-2'>Customization</span> <span className='bg-slate-100 p-2 border-2'>Automated quality testing</span> <span className='bg-slate-100 p-2 border-2'>Indepth requirement analysis</span> <span className='bg-slate-100 p-2 border-2  '>Overall system architecture</span>  <span className='bg-slate-100 p-2 border-2'>Efficient Programming</span> <span className='bg-slate-100 p-2 border-2'>Customization</span> <span className='bg-slate-100 p-2 border-2'>Automated quality testing</span> <span className='bg-slate-100 p-2 border-2'>Indepth requirement analysis</span> <span className='bg-slate-100 p-2 border-2  '>Overall system architecture</span>  <span className='bg-slate-100 p-2 border-2'>Efficient Programming</span> <span className='bg-slate-100 p-2 border-2'>Customization</span> <span className='bg-slate-100 p-2 border-2'>Automated quality testing</span> </infinity>
+      <p className="loopslider py-2 border-[#DBE0F2] ">
+        <infinity className='text-xl font-semibold'> <span className='bg-[#F0F2F6] p-2 border-2'>Indepth requirement analysis</span> <span className='bg-[#F0F2F6] p-2 border-2  '>Overall system architecture</span>  <span className='bg-[#F0F2F6] p-2 border-2'>Efficient Programming</span> <span className='bg-[#F0F2F6] p-2 border-2'>Customization</span> <span className='bg-[#F0F2F6] p-2 border-2'>Automated quality testing</span> <span className='bg-[#F0F2F6] p-2 border-2'>Indepth requirement analysis</span> <span className='bg-[#F0F2F6] p-2 border-2  '>Overall system architecture</span>  <span className='bg-[#F0F2F6] p-2 border-2'>Efficient Programming</span> <span className='bg-[#F0F2F6] p-2 border-2'>Customization</span> <span className='bg-[#F0F2F6] p-2 border-2'>Automated quality testing</span> <span className='bg-[#F0F2F6] p-2 border-2'>Indepth requirement analysis</span> <span className='bg-[#F0F2F6] p-2 border-2  '>Overall system architecture</span>  <span className='bg-[#F0F2F6] p-2 border-2'>Efficient Programming</span> <span className='bg-[#F0F2F6] p-2 border-2'>Customization</span> <span className='bg-[#F0F2F6] p-2 border-2'>Automated quality testing</span> <span className='bg-[#F0F2F6] p-2 border-2'>Indepth requirement analysis</span> <span className='bg-[#F0F2F6] p-2 border-2  '>Overall system architecture</span>  <span className='bg-[#F0F2F6] p-2 border-2'>Efficient Programming</span> <span className='bg-[#F0F2F6] p-2 border-2'>Customization</span> <span className='bg-[#F0F2F6] p-2 border-2'>Automated quality testing</span> <span className='bg-[#F0F2F6] p-2 border-2'>Indepth requirement analysis</span> <span className='bg-[#F0F2F6] p-2 border-2  '>Overall system architecture</span>  <span className='bg-[#F0F2F6] p-2 border-2'>Efficient Programming</span> <span className='bg-[#F0F2F6] p-2 border-2'>Customization</span> <span className='bg-[#F0F2F6] p-2 border-2'>Automated quality testing</span> </infinity>
       </p>
     </div>
   

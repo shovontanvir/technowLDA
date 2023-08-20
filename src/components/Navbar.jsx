@@ -13,7 +13,7 @@ const Navbar = () => {
             className={`absolute md:hidden top-full left-0 py-1 px-5 w-screen ${
             !menuOpen ? "opacity-0" : "opacity-100"
             } transition-all duration-500`}>
-            <div className="flex bg-black bg-opacity-90 border-2 rounded-tl-3xl rounded-br-3xl border-white py-5">
+            <div className="flex bg-black bg-opacity-90 border-2 rounded-tl-3xl rounded-br-3xl border-white py-5 px-6 ">
             <ul className='flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 md:ml-auto' >
                 <li className='hover:scale-110 duration-300 hover:text-[#FF7069] font-medium text-sm text-white ' onClick={()=> setMenuOpen(false)}>
                     <a href="#about">About</a>
@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="cursor-pointer" onClick={() => navigate("#")}>
             <img src={technowlogo} alt="logo" width={80} />
         </div>
-        <div className="items-center flex justify-end relative w-full">
+        <div className="items-center flex justify-end relative w-full lg:pr-5 pr-0">
         <div
             className="text-white flex md:hidden cursor-pointer"
             onClick={() => setMenuOpen((prevState) => !prevState)}>

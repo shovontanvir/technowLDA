@@ -9,7 +9,7 @@ const Contact = () => {
     
 return (
     <section className='lg:px-28 px-5 py-16 flex flex-wrap' id='contact'>
-        <div className='basis-full lg:basis-3/5 lg:pr-10 h-screen lg:h-auto rounded-xl overflow-clip pb-5'>
+        <div className='basis-full lg:basis-3/5 lg:pr-10 h-screen lg:h-auto rounded-xl overflow-clip '>
             <Map />
         </div>
         <div className='basis-full lg:basis-2/5 '> 
