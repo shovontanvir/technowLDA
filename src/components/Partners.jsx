@@ -12,11 +12,11 @@ import logitechlogo from '../assets/Images/logitech.png'
 
 const Partners = () => {
   return (
-    <section className='text-center flex justify-center lg:px-28 px-5 py-16  ' id='partners'>
+    <section className='text-center flex justify-center lg:px-28 px-5 py-24' id='partners'>
         <div className=' py-16 lg:px-48 px-5  border-2 border-[#e36392] border-t-[#e66337] rounded-3xl '>
-                <h3 className='text-2xl text-slate-400 font-normal '>Partners</h3>
-                <h1 className='font-semibold lg:text-6xl text-4xl pb-10 '>Unlock a brighter future together</h1>
-                <p className='text-base font-normal pb-5'>At Technow, we work closely with our partners to foster a relationship that is built on shared values, objectives, and a commitment to excellence. Through our partner ecosystem, we collaborate to create innovative solutions to provide our clients with the best possible service and support to help them achieve their goals.</p>
+                <h3 className='text-2xl text-slate-400 font-normal font-worksansnormal '>Partners</h3>
+                <h1 className='font-bold lg:text-6xl text-4xl pb-10 font-worksansbold'>Unlock a brighter future together</h1>
+                <p className='text-base font-normal pb-5 font-Inter'>At Technow, we work closely with our partners to foster a relationship that is built on shared values, objectives, and a commitment to excellence. Through our partner ecosystem, we collaborate to create innovative solutions to provide our clients with the best possible service and support to help them achieve their goals.</p>
               <div className='flex'>
                 <Swiper
         

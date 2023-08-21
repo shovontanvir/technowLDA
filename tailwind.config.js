@@ -8,9 +8,12 @@ export default {
   extend: {
     backgroundImage: {
       'homeback': "url('./src/assets/images/home-bg.png')",
-      
-    }
-
+      }
+  },
+  fontFamily: {
+    worksansnormal : ['Work Sans'],
+    worksansbold : ['Work Sans'],
+    Inter :[ 'Inter' ]
   },
   },
   plugins: [],
