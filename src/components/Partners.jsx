@@ -13,7 +13,7 @@ import logitechlogo from '../assets/Images/logitech.png'
 const Partners = () => {
   return (
     <section className='text-center flex justify-center lg:px-28 px-5 py-16  ' id='partners'>
-        <div className=' py-16 lg:px-56 px-5  border-2 border-[#e36392] border-t-[#e66337] rounded-3xl '>
+        <div className=' py-16 lg:px-48 px-5  border-2 border-[#e36392] border-t-[#e66337] rounded-3xl '>
                 <h3 className='text-2xl text-slate-400 font-normal '>Partners</h3>
                 <h1 className='font-semibold lg:text-6xl text-4xl pb-10 '>Unlock a brighter future together</h1>
                 <p className='text-base font-normal pb-5'>At Technow, we work closely with our partners to foster a relationship that is built on shared values, objectives, and a commitment to excellence. Through our partner ecosystem, we collaborate to create innovative solutions to provide our clients with the best possible service and support to help them achieve their goals.</p>
@@ -22,8 +22,10 @@ const Partners = () => {
         
                     grabCursor={true}
                     centeredSlides={true}
-                    slidesPerView={'auto'}
                     pagination={true}
+                    slidesPerView={'auto'}
+                    
+                  
                     autoplay={{
                       delay: 2500,
                       disableOnInteraction: false,
@@ -33,16 +35,16 @@ const Partners = () => {
                     
                     
                   >
-                    <SwiperSlide className='flex items-center justify-center gap-10'>
+                    <SwiperSlide className='flex items-center justify-center gap-5'>
                     <img src={hplogo} alt="hp" />
                     </SwiperSlide>
-                    <SwiperSlide className='flex items-center justify-center gap-10'>
+                    <SwiperSlide className='flex items-center justify-center gap-5'>
                     <img src={microsoftlogo} alt="microsoft" />
                     </SwiperSlide>
-                    <SwiperSlide className='flex items-center justify-center gap-10'>
+                    <SwiperSlide className='flex items-center justify-center gap-5'>
                     <img src={delllogo} alt="dell" />
                     </SwiperSlide>
-                    <SwiperSlide className='flex items-center justify-center gap-10'>
+                    <SwiperSlide className='flex items-center justify-center gap-5'>
                     <img src={logitechlogo} alt="logitech" /> 
                     </SwiperSlide>
                 </Swiper>

@@ -4,12 +4,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import React from 'react'
+import React, { useRef } from 'react'
 import ServiceCard from "../components/ServiceCard";
 import ServiceData from "../DummyData/ServiceData";
 import next from '../assets/Images/next.png'
 
 const Service = () => {
+  const swiperRef = useRef() 
   return (
     <section className="" id='services'>
       <div className=" lg:px-28 px-9 text-center">
@@ -19,7 +20,7 @@ const Service = () => {
 
       </div>
       
-      <div className=" lg:px-28 px-5 ">
+      <div className=" lg:px-28 px-5 relative ">
         <Swiper
         breakpoints={{
           '640': {
@@ -37,10 +38,11 @@ const Service = () => {
         
         }}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         modules={[Navigation, Autoplay]} 
+        onInit={(swiper) => (swiperRef.current = swiper)}
         className="mySwiper ">
         {ServiceData.map((item) => (
           <SwiperSlide className=' px-5'>
@@ -54,17 +56,23 @@ const Service = () => {
           />
           </SwiperSlide>
         ))}
-        </Swiper>
         
+        </Swiper>
+        <div className=' absolute border-2 rounded-lg border-[#ff7069] w-10 right-10 top-1/2  '  >
+          
+            <button className='' >
+              <img src={next} onClick={ ()  =>{
+          // swiperRef.current?.slideNext();
+          console.log('hello')
+        }}  />
+            </button>
+          
+        </div>
         
       </div>
-      <div className='items-end'>
-          <a href="">
-            <button>
-              <img src={next} alt="" />
-            </button>
-          </a>
-        </div>
+      
+      
+      
       
       {/* loop swiper */}
     
