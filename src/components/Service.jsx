@@ -13,7 +13,7 @@ const Service = () => {
   const swiperRef = useRef() 
   return (
     <section className="" id='services'>
-      <div className=" lg:px-28 px-9 py-12 text-center">
+      <div className=" lg:px-20 px-9 py-12 text-center">
         <h3 className=" pt-20 text-2xl text-slate-400 font-semibold font-worksansnormal"> SERVICES</h3>
         <h1 className="lg:text-6xl text-5xl pb-10 font-bold font-worksansbold">What we do</h1>
         <p className="text-base font-normal lg:px-64 pb-14 font-Inter">Technow strives to be a reliable and trusted partner, working closely with our clients to ensure their success in today's rapidly evolving technology landscape. Our team of experts is committed to delivering high-quality services and exceptional customer support, helping our clients achieve their goals and stay ahead of the competition. Explore our services below to learn more.</p>
@@ -43,9 +43,9 @@ const Service = () => {
         }}
         modules={[Navigation, Autoplay]} 
         onInit={(swiper) => (swiperRef.current = swiper)}
-        className="mySwiper ">
+        className="mySwiper">
         {ServiceData.map((item) => (
-          <SwiperSlide className=' px-5'>
+          <SwiperSlide className='justify-between px-5 '>
           <ServiceCard
             key={item.id}
             image={item.image}
@@ -58,7 +58,7 @@ const Service = () => {
         ))}
         
         </Swiper>
-        <div className=' absolute border-2 rounded-lg border-[#ff7069] w-10 right-10 top-1/2'  >
+        <div className=' absolute border-2 rounded-lg border-[#ff7069] w-10 lg:right-10 lg:top-1/2 hidden '   >
           
             <button className='' >
               <img src={next} className='pt-1 pl-2' onClick={ ()  =>{

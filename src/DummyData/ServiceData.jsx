@@ -11,7 +11,7 @@ export const ServiceData = [
     heading: "APPLICATION DEVELOPMENT AND MAINTENANCE",
     subHeading: "Transforming Your Business with Tailored Applications",
     description:
-      "Our skilled developers create customized applications tailored to your unique business needs. We also provide application maintenance services to ensure smooth system functionality, allowing you to concentrate on core business activities.",
+      "Our skilled developers create customized applications tailored to your unique business needs. We also provide application maintenance services to ensure smooth system functionality.",
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ export const ServiceData = [
     heading: "CLOUD SERVICES",
     subHeading: "Elevating Your Business to New Heights with Cloud Solutions",
     description:
-      "Our secure and scalable cloud solutions help our clients migrate their IT infrastructure to the cloud to help businesses to improve flexibility, reduce costs, and enhance scalability. We also offer ongoing cloud management and optimization services to ensure that our clients get the most out of their cloud-based systems.",
+      "Our secure and scalable cloud solutions help our clients migrate their IT infrastructure to the cloud to help businesses to improve flexibility, reduce costs, and enhance scalability. We also offer ongoing cloud management and optimization services.",
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ export const ServiceData = [
     subHeading:
       "Accelerate Your Growth with Strategic Consulting and Innovative Problem Solving",
     description:
-      "Our services focus on understanding our clients' business challenges and providing tailored solutions align with their goals. Our team helps businesses identify and overcome complex IT challenges, driving innovation and growth. We specialize in problem-solving to find practical solutions to IT challenges.",
+      "Our services focus on understanding our clients' business challenges and providing tailored solutions align with their goals. Our team helps businesses identify and overcome complex IT challenges, driving innovation and growth. We specialize in problem-solving.",
   },
 ];
 

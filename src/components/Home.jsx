@@ -7,7 +7,7 @@ import contactusbtn from '../assets/Images/contactUsBtn.png'
 const Home = () => {
   return (
     <section className='h-screen flex  bg-homeback bg-cover bg-fixed'>
-        <div className='lg:px-28 pt-56 md:pt-56 px-2 xl:basis-2/3 lg:text-left text-center justify-between   '>
+        <div className='lg:px-28 lg:py-44 pt-56  px-2 xl:basis-2/3 lg:text-left text-center justify-between   '>
             <h1 className=' font-bold text-5xl lg:text-8xl text-white font-worksansbold '>
             We <span className='text-[#FF7069]'>enrich</span> lives through <span className='text-[#FF7069]'>better</span> user expirience
             </h1>
